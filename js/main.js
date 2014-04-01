@@ -1,0 +1,1 @@
+$("img[width]").removeAttr("width").css({"width" : "100%"});

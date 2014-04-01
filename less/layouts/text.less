@@ -1,0 +1,54 @@
+.sans-serif-font () {
+    font-family: 'proxima-nova', "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif
+}
+
+// HEADERS
+
+h1, h2, h3, h4, h5, h6 {
+    .sans-serif-font;
+    font-weight: 400;
+    line-height: 1.4em;
+    padding: 1em 0 1rem 0;
+    margin: 0;
+}
+
+h1 { .rem(37,47); }
+h2 { .rem(34,37); }
+h3 { .rem(26,34); }
+h4 { .rem(24,26); }
+h5 { .rem(19,24); }
+h6 { .rem(17,19); }
+
+p {
+    margin: 0 0 1em 0;
+}
+
+// Calculate margins above headers based on header size
+p, span, div, ul, li, section, img {
+    + h1, + h2, + h3, + h4, + h5, + h6 {
+        margin-top: @base-line-height-sm * 1em;        
+
+        @media @bp2 {
+            margin-top: @base-line-height-lg * 1em;        
+        }
+    }
+}
+
+h1.callout-header { .rem(24,26); }
+h2.callout-header { .rem(19,24); }
+h3.callout-header { .rem(17,19); }
+h4.callout-header { .rem(17,19); }
+h5.callout-header { .rem(17,19); }
+h6.callout-header { .rem(17,19); }
+
+h1, h2, h3, h4, h5, h6 {
+
+    &.callout-header {
+        font-weight: 800;
+        color: @cune-blue;
+    }
+}
+
+.text-center {
+    text-align: center;
+}

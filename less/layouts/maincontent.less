@@ -1,0 +1,68 @@
+#cune_maincontent {
+	padding-top: 95px;
+}
+
+.cune-overlay-holder {
+	position: relative;
+
+	.cune-overlay {
+		position: absolute;
+		bottom: 5%;
+		left: 0;
+		text-transform: uppercase;
+		font-size: 2.5rem;
+		font-weight: bold;
+		background: rgba(255, 255, 255, 0.5);
+		width: 100%;
+		left: 0;
+		line-height: 1;
+		padding: 1% 5%;
+	}
+}
+
+.cune-neutral-band {
+	background: #e1e1e1;
+}
+
+.cune-highlight-box {
+	background: rgba(147,197,119,.2);
+	padding: 1em;
+	border-radius: 0.5em;
+}
+
+.cune-quote-band {
+	background:fadeout(#2e69d4, 65%);
+	text-align: center;
+	.rem(22,32);
+	color: @cune-blue;
+
+	.emphasized {
+		display: block;
+		.rem(48);
+		font-weight: bold;
+	}
+
+	.cune_cite {
+		display: block;
+		font-style: italic;
+		font-size: 0.5em;
+		color: fadeout(@cune-blue, 35%);
+
+		a {
+			color: fadeout(@cune-blue, 35%);
+		}
+	}
+}
+
+.cune-blue {
+	color: @cune-blue;
+}
+
+.micro-form {
+	.rem(16);
+	padding-bottom: 1em;
+
+	.form-title {
+		.rem(22);
+	}
+}
